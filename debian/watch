@@ -1,0 +1,9 @@
+version=4
+
+# PGP signature mangle, so foo.tar.gz has foo.tar.gz.sig
+#opts="pgpsigurlmangle=s%$%.sig%"
+
+# GitHub hosted projects
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%linux-sgx-driver-$1.tar.gz%" \
+   https://github.com/intel/linux-sgx-driver/tags \
+   (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate

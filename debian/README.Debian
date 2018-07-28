@@ -1,0 +1,1 @@
+Execute `modprobe isgx` after installing linux-sgx-driver-dkms package.

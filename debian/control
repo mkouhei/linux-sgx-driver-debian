@@ -1,0 +1,27 @@
+Source: linux-sgx-driver
+Section: kernel
+Priority: optional
+Maintainer: Kouhei Maeda <mkouhei@palmtb.net>
+Build-Depends: debhelper (>= 11),
+               dkms
+Standards-Version: 4.1.5
+Homepage: https://github.com/intel/linux-sgx-driver
+#Vcs-Browser: https://salsa.debian.org/debian/linux-sgx-driver
+#Vcs-Git: https://salsa.debian.org/debian/linux-sgx-driver.git
+
+Package: linux-sgx-driver-dkms
+Architecture: amd64
+Depends: ${misc:Depends},
+         dkms
+Description: Intel(R) Software Guard Extensions for Linux* OS
+ Intel(R) Software Guard Extensions (Intel(R) SGX) is an Intel technology for
+ application developers seeking to protect select code and data from disclosure
+ or modification.
+ .
+ The Linux SGX software stack is comprised of the Intel(R) SGX driver,
+ the Intel(R) SGX SDK, and the Intel(R) SGX Platform Software.
+ The Intel(R) SGX SDK and Intel(R) SGX PSW are hosted in the linux-sgx project.
+ .
+ The linux-sgx-driver project hosts the out-of-tree driver
+ for the Linux Intel(R) SGX software stack,
+ which will be used until the driver upstreaming process is complete.

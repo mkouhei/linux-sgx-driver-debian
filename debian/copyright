@@ -1,0 +1,40 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: linux-sgx-driver
+Source: https://github.com/intel/linux-sgx-driver
+
+Files: *
+Copyright: 2016 Adam RC Gretzinger <adam.r.gretzinger@intel.com>
+           2016, 2017 Andy Zhao <yebin.andy.zhao@intel.com>
+           2016, 2017 Angie Chinchilla <angie.v.chinchilla@intel.com>
+           2016 Jarkko Sakkinen <jarkko.sakkinen@linux.intel.com>
+           2016 Jo Van Bulck <jo.vanbulck@cs.kuleuven.be>
+           2018 Sean Christopherson <sean.j.christopherson@intel.com>
+           2017, 2018 Serge Ayoun <serge.ayoun@intel.com>
+           2016 Warren He <-w@berkeley.edu>
+           2017 ZongminGu <zongmin.gu@intel.com>
+           2016-2018 haitaohuang <haitao.huang@intel.com>
+           2016-2018 lzha101 <lili.z.zhang@intel.com>
+           2017, 2018 sergeay <serge.ayoun@intel.com>
+           2016 yuyuany <yuan.yu@intel.com>
+License: GPL-2.0
+
+Files: debian/*
+Copyright: 2018 Kouhei Maeda <mkouhei@palmtb.net>
+License: GPL-2.0
+
+License: GPL-2.0
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".

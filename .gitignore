@@ -5,3 +5,11 @@
 *.symvers
 *.order
 *.tmp_versions
+debian/linux-sgx-driver-dkms/
+debian/linux-sgx-driver-dkms*.debhelper*
+debian/linux-sgx-driver-dkms*.substvars
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+.cache.mk
+.pc/

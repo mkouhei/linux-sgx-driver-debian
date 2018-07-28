@@ -1,0 +1,24 @@
+Description: override Makefile
+Origin: vendor
+Author: Kouhei Maeda <mkouhei@palmtb.net>
+Last-Update: 2018-07-28
+Index: linux-sgx-driver/Makefile
+===================================================================
+--- linux-sgx-driver.orig/Makefile	2018-07-28 19:13:27.317265638 +0900
++++ linux-sgx-driver/Makefile	2018-07-28 19:13:42.393106550 +0900
+@@ -15,11 +15,11 @@
+ default:
+ 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) CFLAGS_MODULE="-DDEBUG -g -O0" modules
+ 
+-install: default
+-	$(MAKE) INSTALL_MOD_DIR=kernel/drivers/intel/sgx -C $(KDIR) M=$(PWD) modules_install
+-	sh -c "cat /etc/modules | grep -Fxq isgx || echo isgx >> /etc/modules"
++#install: default
++# 	$(MAKE) INSTALL_MOD_DIR=kernel/drivers/platform/x86 -C $(KDIR) M=$(PWD) modules_install
++# 	sh -c "cat /etc/modules | grep -Fxq isgx || echo isgx >> /etc/modules"
+ 
+ endif
+ 
+ clean:
+-	rm -vrf *.o *.ko *.order *.symvers *.mod.c .tmp_versions .*o.cmd
++	rm -vrf *.o *.ko *.order *.symvers *.mod.c .tmp_versions .*o.cmd .cache.mk

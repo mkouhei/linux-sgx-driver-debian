@@ -1,0 +1,5 @@
+linux-sgx-driver (2.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnnnn)
+
+ -- Kouhei Maeda <mkouhei@palmtb.net>  Sun, 29 Jul 2018 08:54:25 +0900
